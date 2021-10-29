@@ -1,6 +1,6 @@
 CREATE VIEW faturamento_atual AS
 SELECT
-ROUND(MIN(P.valor),2) AS `faturamento_minimo`,
+FORMAT(MIN(P.valor),2) AS `faturamento_minimo`,
 ROUND(MAX(P.valor), 2) AS `faturamento_maximo`,
 FORMAT(AVG(P.valor), 2) AS `faturamento_medio`,
 ROUND(SUM(P.valor),2) AS `faturamento_total`

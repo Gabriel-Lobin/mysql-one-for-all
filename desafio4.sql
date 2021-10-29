@@ -1,4 +1,4 @@
-CREATE VIEW top_3_artistas AS;
+CREATE VIEW top_3_artistas AS
 SELECT
 A.artista AS `artista`,
 COUNT(A.artista) AS `seguidores`

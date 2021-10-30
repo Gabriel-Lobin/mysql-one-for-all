@@ -13,9 +13,8 @@ FROM
 INNER JOIN
 SpotifyClone.usuarios AS U
 ON U.usuario_id = H.usuario_id
-WHERE U.usuario_id = id_usuario INTO quantidade;
+WHERE U.usuario_id = id_usuario
+GROUP BY H.usuario_id INTO quantidade;
 RETURN quantidade;
 END &&
 DELIMITER ;
-
-

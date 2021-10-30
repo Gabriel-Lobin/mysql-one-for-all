@@ -1,5 +1,3 @@
-
-
 USE SpotifyClone;
 
 SET SQL_SAFE_UPDATES = 0;
@@ -12,5 +10,6 @@ CREATE TRIGGER trigger_usuario_delete
 BEGIN
     DELETE FROM historicos AS H WHERE OLD.usuario_id = H.usuario_id;
 	DELETE FROM seguindo_artista AS A WHERE OLD.usuario_id = A.usuario_id;
+    SET SQL_SAFE_UPDATES = 1;
 END &&
 DELIMITER ;

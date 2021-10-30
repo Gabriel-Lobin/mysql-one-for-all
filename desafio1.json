@@ -1,9 +1,9 @@
 {
-  "coluna_usuario": "usuario_id",
+  "coluna_usuario": "usuario",
   "tabela_que_contem_usuario": "usuarios",
   "coluna_plano": "plano",
   "tabela_que_contem_plano": "planos",
-  "coluna_historico_de_reproducoes": "usuario_id",
+  "coluna_historico_de_reproducoes": "usuarSio_id",
   "tabela_que_contem_historico_de_reproducoes": "historicos",
   "coluna_seguindo_artistas": "usuario_id",
   "tabela_que_contem_seguindo_artistas": "seguindo_artista",

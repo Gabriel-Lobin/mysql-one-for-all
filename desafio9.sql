@@ -12,7 +12,8 @@ BEGIN
     INNER JOIN
     SpotifyClone.albums AS AL
     ON AL.artista_id = A.artista_id
-    WHERE A.artista = nome_artista;
+    WHERE A.artista = nome_artista
+    ORDER BY `album`;
 END &&
 DELIMITER ;
     

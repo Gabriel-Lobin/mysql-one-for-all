@@ -1,5 +1,7 @@
-USE SpotifyClone;
 SET SQL_SAFE_UPDATES = 0;
+
+USE SpotifyClone;
+
 DELIMITER &&
 
 CREATE TRIGGER trigger_usuario_delete

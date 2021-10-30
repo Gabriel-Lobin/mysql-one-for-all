@@ -2,6 +2,8 @@ DROP SCHEMA IF EXISTS SpotifyClone;
 
 CREATE SCHEMA SpotifyClone;
 
+SET SQL_SAFE_UPDATES = 0;
+
 USE SpotifyClone;
 
 CREATE TABLE planos(

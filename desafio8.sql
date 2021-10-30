@@ -2,7 +2,6 @@ USE SpotifyClone;
 
 DELIMITER &&
 
-DROP TRIGGER IF EXISTS trigger_usuario_delete;
 CREATE TRIGGER trigger_usuario_delete
 	BEFORE DELETE ON usuarios
 	FOR EACH ROW
@@ -11,4 +10,6 @@ BEGIN
 	DELETE FROM seguindo_artista AS A WHERE OLD.usuario_id = A.usuario_id;
 END &&
 DELIMITER ;
+
+
 

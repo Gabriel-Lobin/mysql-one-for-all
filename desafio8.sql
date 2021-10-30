@@ -1,5 +1,5 @@
 USE SpotifyClone;
-
+SET SQL_SAFE_UPDATES = 0;
 DELIMITER &&
 
 CREATE TRIGGER trigger_usuario_delete
@@ -10,6 +10,3 @@ BEGIN
 	DELETE FROM seguindo_artista AS A WHERE OLD.usuario_id = A.usuario_id;
 END &&
 DELIMITER ;
-
-
-

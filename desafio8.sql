@@ -1,6 +1,6 @@
 DROP TRIGGER IF EXISTS trigger_usuario_delete;
 
-DELIMITER & & CREATE TRIGGER trigger_usuario_delete BEFORE DELETE ON SpotifyClone.usuarios FOR EACH ROW BEGIN
+DELIMITER & & CREATE TRIGGER trigger_SpotifyClone.usuario_delete BEFORE DELETE ON SpotifyClone.usuarios FOR EACH ROW BEGIN
 DELETE FROM
 	SpotifyClone.historicos AS H
 WHERE
